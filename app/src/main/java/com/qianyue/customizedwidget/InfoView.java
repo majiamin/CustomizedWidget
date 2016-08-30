@@ -37,7 +37,7 @@ public class InfoView extends View {
     private int maxTranslationY;// 最大的线长
     int a = 0;
 
-    private String center_word = "身份证号:13032419920317093X";// 放在中间的词,可空,此处填写身份证
+    private String center_word = "身份证号:130324XXXXXXXXXXXX";// 放在中间的词,可空,此处填写身份证
     private Paint wordPaint;// 写中间的词的画笔
     private Paint areaPaint;// 画下边的透明区域的笔
 
