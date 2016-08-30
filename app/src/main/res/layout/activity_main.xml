@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.qianyue.customizedwidget.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+
+        <com.qianyue.customizedwidget.InfoView
+            android:id="@+id/infoView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:degree_offset="30"
+            app:image_radius="50dp"
+            app:image_src="@mipmap/timg_1"
+            app:line_color="#918f8f"
+            app:line_offset="15dp"
+            app:line_width="0.5dp"
+            app:text_color="#ffffff"
+            app:word_color="@color/colorHolo"
+            app:text_size="13sp"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="点点看!"/>
+
+
+    </FrameLayout>
+
+    <com.qianyue.customizedwidget.DampHorizontal
+        android:id="@+id/damp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#26324a"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHolo"
+                android:gravity="center"
+                android:text="姓名:\t大卫斯特恩"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorHolo"
+                android:text="组织:\t美国男篮职业联赛"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorHolo"
+                android:text="职位:\t总裁"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorHolo"
+                android:text="主要成就:大力拓展\n了NBA的国际市场.尤其是\n2002年姚明被选中状元\n进入NBA之后,更是彻\n底打开了中国市场"/>
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHolo"
+                android:text="再点点看"
+                />
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/lv_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:text="这是scrollview的第一个"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:text="这是scrollview的第二个"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </com.qianyue.customizedwidget.DampHorizontal>
+
+
+</RelativeLayout>

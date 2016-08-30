@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InfoView">
+        // 图片资源 引用类型
+        <attr name="image_src" format="reference"/>
+        // 信息字的大小
+        <attr name="text_size" format="dimension" />
+        // 图片的半径
+        <attr name="image_radius" format="dimension" />
+        // 初始偏移角度
+        <attr name="degree_offset" format="integer" />
+        // 角度波动范围
+        <attr name="degree_wave" format="integer" />
+        // 引线超出半径的长度
+        <attr name="line_offset" format="dimension" />
+        // 引线的波动范围
+        <attr name="line_wave" format="dimension" />
+        // 信息字的颜色
+        <attr name="text_color" format="color"/>
+        // 引线的颜色
+        <attr name="line_color" format="color" />
+        // 引线的宽度
+        <attr name="line_width" format="dimension" />
+        // 中间关键词字的颜色
+        <attr name="word_color" format="color"/>
+        // 中间关键词的大小
+        <attr name="word_size" format="dimension"/>
+    </declare-styleable>
+</resources>
